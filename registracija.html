@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LLmob</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=latin-ext" rel="stylesheet">   
+</head>
+	<header>
+		<div>
+			<div class="logo">
+				<a href="index.html"><img class="w-20" src="slike/logo.png"></a>
+			</div>
+			<nav>
+				<ul class="linkovi">
+					<li><a  href="index.html"><i class="fas fa-home"></i> Pocetna</a></li>
+					<li class="has-children">
+						<a href="proizvodi.html"><i class="fas fa-tools"></i> Proizvodi</a>
+						<ul class="dropdown">
+							<li><a href="mobiteli.html"><i class="fas fa-toolbox"></i> Mobiteli</a></li>
+							<li><a href="oprema.html"><i class="fas fa-hammer"></i> Oprema</a></li>
+						</ul>
+					</li>
+					<li><a href="korpa.html"><i class="far fa-envelope"></i> Korpa</a></li>
+				</ul>
+			</nav>
+		</div>
+        <br><br><br><br><br><br>
+    </header>
+<body class="body">
+    <div class="pozad1">
+		<br><br><br>
+		<form action="php/register.php" method="POST">
+			<div class="container">
+			  <h1>Registracija</h1>
+			  <p>Molimo popunite formu</p>
+			  <hr>
+
+			  <label for="fname"><b>Ime</b></label>
+			  <input type="text" placeholder="Unesite vase ime" name="fname" id="fname" required>
+
+			  <label for="lname"><b>Prezime</b></label>
+			  <input type="text" placeholder="Unesite vase prezime" name="lname" id="lname" required>
+
+			  <label for="username"><b>Username</b></label>
+			  <input type="text" placeholder="Unesite vas novi username" name="uname" id="username" required>
+
+			  <label for="email"><b>Email</b></label>
+			  <input type="text" placeholder="Unesite vas email" name="email" id="email" required>
+
+			  <label for="street"><b>Adresa stanovanja</b></label>
+			  <input type="text" placeholder="Unesite vasu adresu stanovanja" name="street" id="street" required>
+
+			  <label for="city"><b>Grad</b></label>
+			  <input type="text" placeholder="Unesite grad u kojem zivite" name="city" id="city" required>
+
+			  <label for="phone"><b>Broj telefona</b></label>
+			  <input type="text" placeholder="Unesite vas broj telefona" name="phone" id="phone" required>
+		  
+			  <label for="psw"><b>Lozinka</b></label>
+			  <input type="password" placeholder="Odaberite lozinku" name="psw" id="psw" required>
+		  
+			  <label for="psw-repeat"><b>Potvrda lozinke</b></label>
+			  <input type="password" placeholder="Ponovo unesite vasu lozinku" name="psw-repeat" id="psw-repeat" required>
+			  <hr>
+
+			  <button type="submit" name= "submit" class="cart-btn">Registruj se</button>
+			</div>
+		  
+			<div class="container signin">
+			  <p>Već imate profil?<b onclick="document.getElementById('id01').style.display='block'">Prijavite se</b></p>
+			</div>
+			<?php echo $success; ?>
+			<?php echo $error; ?>
+		  </form>
+
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<form class="modal-content animate" action="/action_page.php">           
+				<div style="margin-top: 20px; margin-left: 20px; margin-right: 20px;">
+					<label for="username"><b>Username</b></label>
+				</div>
+				<div style=" margin-left: 20px; margin-right: 20px;">
+					<input type="text" placeholder="Upisite vas username" name="uname" required>
+				</div>
+				<div style=" margin-left: 20px; margin-right: 20px;">
+					<label for="psw"><b>Lozinka</b></label>
+				</div>  
+				<div style=" margin-left: 20px; margin-right: 20px;">
+					<input type="password" placeholder="Upisite vasu lozinku" name="psw" required>
+				</div>    
+				<div style=" margin: 20px;">
+					<button type="submit">Prijava</button>
+					<label>
+					<input type="checkbox" checked="checked" name="remember"> Zapamti me
+					</label>
+					<label class="new"><a href="">Izradite novi racun</a></label>
+				</div>
+			
+			
+				</div>
+			</form>
+		</div>
+    </div>
+</body>
+    

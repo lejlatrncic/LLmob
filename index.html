@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LLmob</title>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap&subset=latin-ext" rel="stylesheet">   
+</head>
+<body>
+	<header>
+		<div>
+			<div class="logo">
+				<a href="index.html"><img class="w-20" src="slike/logo.png"></a>
+			</div>
+			<nav>
+				<ul class="linkovi">
+					<li><a class="active" href="index.html"><i class="fas fa-home"></i> Pocetna</a></li>
+					<li class="has-children">
+						<a href="proizvodi.html"><i class="fas fa-tools"></i> Proizvodi</a>
+						<ul class="dropdown">
+							<li><a href="mobiteli.html"><i class="fas fa-toolbox"></i> Mobiteli</a></li>
+							<li><a href="oprema.html"><i class="fas fa-hammer"></i> Oprema</a></li>
+						</ul>
+					</li>
+					<li><a href="korpa.html"><i class="far fa-envelope"></i> Korpa</a></li>
+					<li><button class="cart-btn" onclick="document.getElementById('id01').style.display='block'">Prijava</button></li>
+				</ul>
+			</nav>
+		</div>
+		<br><br><br><br><br><br>
+	</header>
+	<body class="body">
+		<div class="pozad1">
+			<div class="slider">
+				<img class="w-100" src="slike/slide.jpg">
+			</div>
+	
+	
+		<main class="glavnidio">
+			<section class="about">
+				<div class="inner-wrapper">
+					<h1>O nama</h1>
+					<img class="float-left w-50 mr-10 scale" src="slike/onama.jpg">
+					<p class="mt-0">Kompanija LL nastala je kao produkt dugogodisnjeg rada i istrazivanja naseg trzista, te smo u vezi s tim implementirali nas Online Shop. 
+						Pruzamo sansu da brzo i jednostavno pronadjete najmodernije uredjaje po vasoj zelji koji ce vam putem brze poste biti dostavljeni na vasu kucnu adresu neovisno o vasoj lokaciji
+						Cilj nam je da nasim kupcima obezbjedimo prije svega kvalitet, najpovoljnije cijene te ekspresnu i sigurnu uslugu.</p>
+					<p class="mt-0">Na svaki uredjaj nudimo garanciju od 3/5 godina te usluge nase mobile service sluzbe.</p>
+					
+				</div>
+			</section>
+
+			<section class="products">
+				<div class="inner-wrapper">
+					<h1 class="text-white">NASI FAVORITI</h1>
+					<div class="col-3">
+						<div class="wrapper">
+							<img class="w-100" src="slike/gal-1.jpg">
+							<button class="w-100opis" onclick="document.getElementById('id06').style.display='block'" >IPhone 12 Pro Max</button>
+						</div>	
+					</div>
+					<div class="col-3">
+						<div class="wrapper">
+							<img class="w-100" src="slike/gal-2.jpg">
+							<button class="w-100opis"onclick="document.getElementById('id05').style.display='block'" >Samsung Galaxy S20</button>
+						</div>
+					</div>
+					<div class="col-3">
+						<div class="wrapper">
+							<img class="w-100" src="slike/gal-3.jpg">
+							<button class="w-100opis" onclick="document.getElementById('id09').style.display='block'">Huawei Honor 50 Lite</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		</main>
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<form class="modal-content animate" action="/action_page.php">           
+				<div style="margin-top: 20px; margin-left: 20px; margin-right: 20px;">
+					<label for="username"><b>Username</b></label>
+				</div>
+				<div style=" margin-left: 20px; margin-right: 20px;">
+					<input type="text" placeholder="Upisite vas username" name="uname" required>
+				</div>
+				<div style=" margin-left: 20px; margin-right: 20px;">
+					<label for="psw"><b>Lozinka</b></label>
+				</div>  
+				<div style=" margin-left: 20px; margin-right: 20px;">
+					<input type="password" placeholder="Upisite vasu lozinku" name="psw" required>
+				</div>    
+				<div style=" margin: 20px;">
+					<button type="submit">Prijava</button>
+					<label>
+					<input type="checkbox" checked="checked" name="remember"> Zapamti me
+					</label>
+					<label  class="new"><a href="registracija.html">Izradite novi racun</a></label>
+				</div>			
+				</div>
+			</form>
+		</div>
+
+		<div id="id06" class="modal1">
+			<span onclick="document.getElementById('id06').style.display='none'" class="close1" title="Close Modal">&times;</span>
+			<div class="modal-content1 animate" class="proiz">
+				<main class="containerproduct">
+					<div class="left-column">
+					<img src="slike/gal-1.jpg">
+					</div>              
+					<div class="right-column">              
+						<div class="product-description">
+							<span>mobiteli</span>
+							<h1>APPLE IPHONE 12 PRO</h1>
+							<p>Apple iPhone 12 Pro 5G Dual eSIM 128GB 6GB RAM Pacific Plavi</p>
+							<p><b>Tehnologija: </b>GSM / CDMA / HSPA / EVDO / LTE / 5G</p>
+							<p><b>Izrada: </b>Staklo sprijeda (Gorilla Glass), staklo straga (Gorilla Glass), okvir od nehrđajućeg čelika</p>
+							<p><b>SIM: </b>Pojedinačna SIM (Nano-SIM i / ili eSIM)</p>
+							<p><b>Veličina: </b>6, 1 inča, 90, 2 cm2 (~ 86, 0% omjera zaslona i tijela)</p>
+							<p><b>OS: </b>iOS 14.1</p>
+							<p><b>Interna memorija: </b>128 GB, 6 GB RAM</p>
+							<p><b>Baterija: </b>Do 17 h (multimedija)</p>                    
+						</div>
+						<div class="product-price">
+							<span>1980 KM</span>
+							<a href="korpa.html" class="cart-btn">Dodaj u korpu</a><br><br><br><br><br><br>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+		<div id="id05" class="modal1">
+			<span onclick="document.getElementById('id05').style.display='none'" class="close1" title="Close Modal">&times;</span>
+			<div class="modal-content1 animate" class="proiz">
+				<main class="containerproduct">
+					<div class="left-column">
+					<img src="slike/gal-2.jpg">
+					</div>              
+					<div class="right-column">              
+						<div class="product-description">
+							<span>mobiteli</span>
+							<h1>SAMSUNG GALAXY S20</h1>
+							<p>Samsung Galaxy S20 FE 5G Dual SIM 128GB 6GB RAM SM-G781B Cloud Navy Plavi</p>
+							<p><b>Tehnologija: </b>GSM / CDMA / HSPA / EVDO / LTE / 5G</p>
+							<p><b>Izrada: </b>Staklo sprijeda, plastika straga, aluminijski okvir</p>
+							<p><b>SIM: </b>Hybrid Dual SIM (Nano-SIM, dvostruka stand-by)</p>
+							<p><b>Veličina: </b>6, 5 inča, 101, 0 cm2 (~ 84, 8% omjera zaslona i tijela)</p>
+							<p><b>OS: </b>Android 10, jedan UI 2.5</p>
+							<p><b>Interna memorija: </b>128 GB, 6 GB RAM</p>
+							<p><b>Baterija: </b>Brzo punjenje 25WBrzo bežično punjenje 15WReverzno bežično punjenje 4, 5WUSB Power Delivery 3.0</p>                    
+						</div>
+						<div class="product-price">
+							<span>890 KM</span>
+							<a href="korpa.html" class="cart-btn">Dodaj u korpu</a><br><br><br><br><br><br>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+		<div id="id09" class="modal1">
+			<span onclick="document.getElementById('id09').style.display='none'" class="close1" title="Close Modal">&times;</span>
+			<div class="modal-content1 animate" class="proiz">
+				<main class="containerproduct">
+					<div class="left-column">
+					<img src="slike/honor50.jpg">
+					</div>              
+					<div class="right-column">              
+						<div class="product-description">
+							<span>mobiteli</span>
+							<h1>HUAWEI HONOR 50 LITE</h1>
+							<p>Huawei Honor 50 Lite Dual SIM 128GB 6GB RAM Plavi</p>
+							<p><b>Tehnologija: </b>GSM / HSPA / LTE</p>
+							<p><b>SIM: </b>Dual SIM (nano-SIM, dual stand-by)</p>
+							<p><b>Veličina: </b>6, 67 inča, 108, 1 cm2 (~89, 5% omjer zaslona i tijela)</p>
+							<p><b>OS: </b>Android 11, Magic UI 4.2, usluge Google Play</p>
+							<p><b>Interna memorija: </b>128GB 6GB RAM, 128GB 8GB RAM</p>
+							<p><b>Baterija: </b>Brzo punjenje 66W, 40% za 10 min (oglašeno)</p>                    
+						</div>
+						<div class="product-price">
+							<span>420 KM</span>
+							<a href="korpa.html" class="cart-btn">Dodaj u korpu</a><br><br><br><br><br><br>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+	</body>
+	<footer class="footer">
+		<div class="inner-wrapper">
+			<h1>KONTAKTIRAJTE NAS</h1>
+			<p><b>Telefon:</b> 000 000 000</p>
+			<p><b>Email:</b> <a href="mailto:llmob@gmail.com">llmob@gmail.com</a></p>
+			<p class="mb-0"><b>Adresa:</b> Zmaja od Bosne bb</p>
+		</div>
+	</footer>
+	</body>
+</html>
